@@ -5,7 +5,8 @@
  * @size: The size of the array.
  *
  * This function sorts an array of integers in ascending order using the bubble
- * sort algorithm. It iterates through the array and compares adjacent elements,
+ * sort algorithm. It iterates through the array
+ * and compares adjacent elements,
  * swapping them if they are in the wrong order. This process is repeated until
  * the array is sorted.
  *
