@@ -20,27 +20,24 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t i, k, min_indx, tmp;
+	int tmp;
+	size_t i, k, min_index;
 
-	if (!array || !size)
-	{
+	if (!array)
 		return;
-	}
 	for (i = 0; i < size; i++)
 	{
-		min_indx = i;
+		min_index = i;
 		for (k = i + 1; k < size; k++)
 		{
-			if (array[k] < array[min_indx])
-			{
-				min_indx = k;
-			}
+			if (array[min_index] > array[k])
+				min_index = k;
 		}
-		if (min_indx != i)
+		if (min_index != i)
 		{
 			tmp = array[i];
-			array[i] = array[min_indx];
-			array[min_indx] = tmp;
+			array[i] = array[min_index];
+			array[min_index] = tmp;
 			print_array(array, size);
 		}
 	}
