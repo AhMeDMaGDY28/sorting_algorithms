@@ -18,13 +18,11 @@ void swap(int *arr, size_t size, int start, int end)
 {
 	int tmp;
 
-	if (start != end)
-	{
 		tmp = arr[start];
 		arr[start] = arr[end];
 		arr[end] = tmp;
 		print_array(arr, size);
-	}
+
 }
 /**
  * loumto_part - Partitions an array and returns the partition index.
