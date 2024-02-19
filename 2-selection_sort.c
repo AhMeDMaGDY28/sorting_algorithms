@@ -20,8 +20,12 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	unsigned long int i, k, min_indx, tmp;
+	size_t i, k, min_indx, tmp;
 
+	if (!array || !size)
+	{
+		return;
+	}
 	for (i = 0; i < size; i++)
 	{
 		min_indx = i;
