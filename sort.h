@@ -24,5 +24,9 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
+void swap(int *arr, size_t size, int start, int end);
+int loumto_part(int *arr, size_t size, int start, int end);
+void quick_sort_recrs(int *arr, size_t size, int start, int end);
+void shell_sort(int *array, size_t size);
 
 #endif
