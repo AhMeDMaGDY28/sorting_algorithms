@@ -28,5 +28,6 @@ void swap(int *arr, size_t size, int start, int end);
 int loumto_part(int *arr, size_t size, int start, int end);
 void quick_sort_recrs(int *arr, size_t size, int start, int end);
 void shell_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
 
 #endif
