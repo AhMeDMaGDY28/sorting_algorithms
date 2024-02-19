@@ -22,7 +22,11 @@ void selection_sort(int *array, size_t size)
 {
 	unsigned long int i, k, min_indx, tmp;
 
-	for (i = 0; i < size - 1; i++)
+	if (!array || !size)
+	{
+		return;
+	}
+	for (i = 0; i < size; i++)
 	{
 		min_indx = i;
 		for (k = i + 1; k < size; k++)
