@@ -22,10 +22,6 @@ void selection_sort(int *array, size_t size)
 {
 	unsigned long int i, k, min_indx, tmp;
 
-	if (!array || !size)
-	{
-		return;
-	}
 	for (i = 0; i < size; i++)
 	{
 		min_indx = i;
@@ -41,7 +37,7 @@ void selection_sort(int *array, size_t size)
 			tmp = array[i];
 			array[i] = array[min_indx];
 			array[min_indx] = tmp;
+			print_array(array, size);
 		}
-		print_array(array, size);
 	}
 }
