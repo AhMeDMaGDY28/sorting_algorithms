@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -29,5 +30,6 @@ int loumto_part(int *arr, size_t size, int start, int end);
 void quick_sort_recrs(int *arr, size_t size, int start, int end);
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
+void counting_sort(int *array, size_t size);
 
 #endif
