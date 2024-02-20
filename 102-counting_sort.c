@@ -68,13 +68,13 @@ int *_strcpy(int *dest, int *src, size_t size)
  */
 void counting_sort(int *arr, size_t size)
 {
-	int max = max_finder(arr, size);
+	int max;
 	int *count_arr, *out_arr, curr_elem, sort_post;
 	size_t i;
 
 	if (!arr || !size || size == 1)
 		return;
-
+	max = max_finder(arr, size);
 	count_arr = calloc(max + 1, sizeof(int));
 
 	for (i = 0; i < size; i++)
